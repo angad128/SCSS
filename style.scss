@@ -2,20 +2,29 @@
 	border: 3px solid dodgerblue;
 	background: lightgreen;
 	margin: 10px;
+	text-align: center;
 }
 .pannel:hover {
 	cursor: pointer;
 	transform: scale(.9);
 }
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
 
 .little-pannel {
 	@extend .pannel;
+	@include border-radius(5px);
 	font-size: 12px;
 	padding: 5px;
 }
 
 .big-pannel {
 	@extend .pannel;
+	@include border-radius(20px);
 	font-size: 22px;
 	padding: 15px;
 }
