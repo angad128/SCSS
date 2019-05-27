@@ -1,5 +1,21 @@
-@import "profile";
+.pannel {
+	border: 3px solid dodgerblue;
+	background: lightgreen;
+	margin: 10px;
+}
+.pannel:hover {
+	cursor: pointer;
+	transform: scale(.9);
+}
 
-p {
-	font-size: 2em;
+.little-pannel {
+	@extend .pannel;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.big-pannel {
+	@extend .pannel;
+	font-size: 22px;
+	padding: 15px;
 }

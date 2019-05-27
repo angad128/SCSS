@@ -1,10 +1,18 @@
-.profile-img {
-  border-radius: 999px;
-  height: 200px;
-  width: 200px;
-  border: 5px solid seagreen; }
+.pannel, .little-pannel, .big-pannel {
+  border: 3px solid dodgerblue;
+  background: lightgreen;
+  margin: 10px; }
 
-p {
-  font-size: 2em; }
+.pannel:hover, .little-pannel:hover, .big-pannel:hover {
+  cursor: pointer;
+  transform: scale(0.9); }
+
+.little-pannel {
+  font-size: 12px;
+  padding: 5px; }
+
+.big-pannel {
+  font-size: 22px;
+  padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */
