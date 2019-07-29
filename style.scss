@@ -1,30 +1,26 @@
-.pannel {
-	border: 3px solid dodgerblue;
-	background: lightgreen;
-	margin: 10px;
-	text-align: center;
-}
-.pannel:hover {
-	cursor: pointer;
-	transform: scale(.9);
-}
-@mixin border-radius($radius) {
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	-ms-border-radius: $radius;
-	border-radius: $radius;
-}
+$btnBackground : #006699;
+$btnColor: white;
+$btnPadding: 5px;
 
-.little-pannel {
-	@extend .pannel;
-	@include border-radius(5px);
-	font-size: 12px;
-	padding: 5px;
-}
 
-.big-pannel {
-	@extend .pannel;
-	@include border-radius(20px);
-	font-size: 22px;
-	padding: 15px;
+.button {
+	background: $btnBackground;
+	color: $btnColor;
+	padding: $btnPadding;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 8px;
+
+}
+.jumbo-button {
+	@extend .button;
+	padding: $btnPadding + 30;
+}
+.light-button {
+	@extend .button;
+	padding: $btnPadding - 5;
+	background: $btnBackground*1.5;
+}
+.light-button:hover {
+	background: #16A885;
 }

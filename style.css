@@ -1,27 +1,19 @@
-.pannel, .little-pannel, .big-pannel {
-  border: 3px solid dodgerblue;
-  background: lightgreen;
-  margin: 10px;
-  text-align: center; }
+.button, .jumbo-button, .light-button {
+  background: #006699;
+  color: white;
+  padding: 5px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 8px; }
 
-.pannel:hover, .little-pannel:hover, .big-pannel:hover {
-  cursor: pointer;
-  transform: scale(0.9); }
+.jumbo-button {
+  padding: 35px; }
 
-.little-pannel {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  font-size: 12px;
-  padding: 5px; }
+.light-button {
+  padding: 0px;
+  background: #0099e6; }
 
-.big-pannel {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  border-radius: 20px;
-  font-size: 22px;
-  padding: 15px; }
+.light-button:hover {
+  background: #16A885; }
 
 /*# sourceMappingURL=style.css.map */
